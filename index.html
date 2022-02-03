@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <script>
+        var images = [
+            "https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg",
+            "https://cdn.pixabay.com/photo/2017/11/28/17/41/nature-2984221__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/06/30/22/12/landscape-2459981__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/05/29/11/16/footprint-2353510__340.jpg",
+            "https://cdn.pixabay.com/photo/2018/04/20/00/06/sunset-3334725__340.jpg",
+            "https://cdn.pixabay.com/photo/2020/06/14/19/08/sea-bridge-5299046__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/03/09/21/01/landscape-2130844__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/11/15/02/salzgitter-2739271__340.jpg",
+            "https://cdn.pixabay.com/photo/2018/08/18/12/22/sunset-3614691__340.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/16/16/06/sea-2755906__340.jpg",
+        ];
+
+        window.onload = function () {
+            var random = Math.floor(Math.random() * images.length);
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundAttachment = "fixed";
+            document.body.style.backgroundImage = "url(" + images[random] + ")";
+        };
+    </script>
+</body>
+
+</html>>
